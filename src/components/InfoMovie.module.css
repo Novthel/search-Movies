@@ -1,0 +1,20 @@
+.infoMovie{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    margin-top: 60px;
+    padding: 10px;
+}
+
+.infoDetails{
+    width: 400px;
+    padding: 30px;
+    font-size: 1.1rem;
+
+}
+
+.infoImg{
+    width: 400px;
+    border-radius: 15px;
+    height: auto;
+}
