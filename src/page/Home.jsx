@@ -12,7 +12,7 @@ export default function Home() {
   return (
     <div>
         <SearchMovie />
-        <MovieList key={search}  search={ search }/>
+        <MovieList key={search} search={ search }/>
     </div>
   )
 }

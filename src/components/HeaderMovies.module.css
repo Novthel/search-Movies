@@ -1,7 +1,6 @@
 
 .HeaderMovies{
-    display: flex;
-    justify-content: center;
+    text-align: center;
     padding: 10px;
     color: red;
     font-size: 2rem;

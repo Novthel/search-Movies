@@ -7,13 +7,13 @@ import {useQuery} from '../Hooks/useQuery';
 
 export default function SearchMovie() {
 
-  const [ searchText, setSearchText ] = useState(' ');
+  const [ searchText, setSearchText ] = useState('');
   const navegacion = useNavigate();
   const query = useQuery();
   const search = query.get('search');
 
   useEffect(()=>{
-    setSearchText(search || ' ')
+    setSearchText(search || '')
   },[search])
 
   const searchingMovie = (e)=>{
