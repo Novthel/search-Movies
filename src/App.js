@@ -12,8 +12,8 @@ function App() {
     <BrowserRouter>
       <HeaderMovies/>
       <Routes>
-        <Route exact path='/' element={ <Home/> }/>
-        <Route exact path='/movie/:id' element={ <InfoMovie /> }/>
+        <Route path='/' element={ <Home/> }/>
+        <Route path='/movie/:id' element={ <InfoMovie /> }/>
       </Routes>
      
     </BrowserRouter>
