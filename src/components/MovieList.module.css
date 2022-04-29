@@ -9,10 +9,10 @@
     
 }
 
-@media (max-width:650px) {
+@media (max-width:500px) {
 
     .movieList{
-        grid-template-columns: 90%;
+        grid-template-columns: 80%;
         
     }
     
