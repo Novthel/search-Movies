@@ -18,3 +18,12 @@
     border-radius: 15px;
     height: auto;
 }
+
+
+@media (max-width:650px) {
+
+    .imgMovieCard{
+        width: 80%;
+        height: auto;
+    }
+}
