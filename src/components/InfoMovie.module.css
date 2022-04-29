@@ -19,10 +19,9 @@
     height: auto;
 }
 
-
 @media (max-width:500px) {
 
-    .imgMovieCard{
+    .infoImg{
         width: 70%;
         height: auto;
     }
