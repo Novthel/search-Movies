@@ -3,7 +3,8 @@ import styles from '../components/InfoMovie.module.css';
 import { get } from '../utils/API';
 import { useParams } from 'react-router-dom';
 import Spinner from '../components/Spinner';
-
+import { ExternalLink } from 'react-external-link';
+import { getImageURL } from '../utils/getImageURL';
 
 export default function InfoMovie() {
 
@@ -23,12 +24,12 @@ export default function InfoMovie() {
   if(isLoading){
     return <Spinner/>
   }
-
+ 
   if(!movie){
     return null
   }
 
-  const imageURL ='https://image.tmdb.org/t/p/w500' + movie.poster_path;
+  const imageURL = getImageURL(movie.poster_path, 500);
   
   return (
 
@@ -40,6 +41,7 @@ export default function InfoMovie() {
         <p><strong>Genres: </strong> {movie.genres.map((genre)=> genre.name).join(', ')}</p>
         <p><strong>Description: </strong></p> 
         <p>{movie.overview}</p>
+        <p><strong>Official site: </strong> <ExternalLink href={ movie.homepage }>{ movie.homepage }</ExternalLink></p>
       </div>
     
     </div>
