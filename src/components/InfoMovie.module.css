@@ -19,10 +19,16 @@
     height: auto;
 }
 
-@media (max-width:500px) {
+@media screen and (max-width:600px) {
 
     .infoImg{
         width: 80%;
         height: auto;
+    }
+    .infoDetails{
+        width: 400px;
+        padding: 30px;
+        font-size: 0.8rem;
+    
     }
 }

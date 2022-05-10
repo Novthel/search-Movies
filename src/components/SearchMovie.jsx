@@ -29,7 +29,7 @@ export default function SearchMovie() {
         <div className={ styles.searchBox }>
             <input type='text' className={ styles.searchInput } placeholder='Search ...'
               value={ searchText } onChange ={ (e)=> setSearchText(e.target.value) }/>
-            <button type='submit' className={ styles.searchBtn }>{<FaSearch size={20}/>}</button>
+            <button type='submit' className={ styles.searchBtn }>{<FaSearch size={20} />}</button>
         </div>    
     </form>
   )

@@ -1,8 +1,23 @@
 
-.HeaderMovies{
-    text-align: center;
-    padding: 10px;
-    color: red;
-    font-size: 2rem;
-    text-shadow: 2px 4px rgb(71, 8, 53);
+.container{
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin: 10px;
+    border-bottom: 1px solid red;
+
+}
+
+.icono{
+    width: 100%;
+
+}
+
+@media screen and (max-width:600px) {
+    .icono{
+        width: 60%;
+        margin-left: 70px;
+  
+    }
+    
 }
